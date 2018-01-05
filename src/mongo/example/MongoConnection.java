@@ -1,7 +1,10 @@
+/**
+ * @author : Harshit Sharma
+ */
+
 package mongo.example;
 
 import com.mongodb.MongoClient;
-import com.mongodb.client.MongoDatabase;
 
 public class MongoConnection
 {
@@ -12,9 +15,6 @@ public class MongoConnection
 	{
 		try {
 			MongoClient mongo = new MongoClient( HOST , PORT );
-
-			MongoDatabase database = mongo.getDatabase("foobar");
-
 			System.out.println("Successfully connected..");
 		}
 		catch (Exception e) {
