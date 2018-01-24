@@ -1,3 +1,8 @@
+/**
+ * Display the fields restaurant_id, name, borough and cuisine,
+ * but exclude the field _id for all the documents in the
+ * collection restaurant.
+ */
 package mongo.example.assignment;
 
 import com.mongodb.MongoClient;

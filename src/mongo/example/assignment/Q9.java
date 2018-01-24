@@ -1,3 +1,7 @@
+/**
+ * Find the restaurants that achieved a score,
+ * more than 80 but less than 100.
+ */
 package mongo.example.assignment;
 
 import com.mongodb.MongoClient;

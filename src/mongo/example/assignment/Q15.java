@@ -1,3 +1,8 @@
+/**
+ * Find the restaurant Id, name, borough and cuisine
+ * for those restaurants which contain 'ces' as last
+ * three letters for its name.
+ */
 package mongo.example.assignment;
 
 import com.mongodb.MongoClient;

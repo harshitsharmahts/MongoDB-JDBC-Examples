@@ -1,3 +1,10 @@
+/**
+ * Find the restaurants which do not prepare any
+ * cuisine of 'American ' and achieved a grade point
+ * 'A' not belongs to the borough Brooklyn.
+ * The document must be displayed according
+ * to the cuisine in descending order
+ */
 package mongo.example.assignment;
 
 import com.mongodb.MongoClient;

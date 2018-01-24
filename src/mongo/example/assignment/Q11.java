@@ -1,3 +1,8 @@
+/**
+ * Find the restaurants that do not prepare any
+ * cuisine of 'American' and their grade score more
+ * than 70 and latitude less than -65.754168.
+ */
 package mongo.example.assignment;
 
 import com.mongodb.MongoClient;

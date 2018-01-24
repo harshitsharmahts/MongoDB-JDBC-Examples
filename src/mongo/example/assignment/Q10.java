@@ -1,3 +1,6 @@
+/**
+ * Find the restaurants which locate in latitude value less than -95.754168.
+ */
 package mongo.example.assignment;
 
 import com.mongodb.MongoClient;

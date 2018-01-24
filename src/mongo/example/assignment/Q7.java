@@ -1,3 +1,7 @@
+/**
+ * Display the next 5 restaurants after skipping
+ * first 5 which are in the borough Bronx.
+ */
 package mongo.example.assignment;
 
 import com.mongodb.MongoClient;

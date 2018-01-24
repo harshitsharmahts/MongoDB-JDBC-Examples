@@ -1,19 +1,18 @@
+/**
+ * Display the fields restaurant_id, name,
+ * borough and cuisine for all the documents
+ * in the collection restaurant.
+ */
 package mongo.example.assignment;
-/*
-*
-*
-* */
+
 import com.mongodb.MongoClient;
 import com.mongodb.client.AggregateIterable;
-import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
-import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 public class Q2 {
 

@@ -1,3 +1,9 @@
+/**
+ *
+ * Display all the documents in the collection restaurants.
+ *
+ */
+
 package mongo.example.assignment;
 
 import com.mongodb.MongoClient;

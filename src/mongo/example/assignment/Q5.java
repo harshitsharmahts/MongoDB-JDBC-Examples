@@ -1,3 +1,6 @@
+/**
+ * Display all the restaurant which is in the borough Bronx.
+ */
 package mongo.example.assignment;
 
 import com.mongodb.MongoClient;
