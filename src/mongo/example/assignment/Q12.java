@@ -8,7 +8,7 @@ import org.bson.Document;
 
 import java.util.Iterator;
 
-public class Q10 {
+public class Q12 {
     public static void main(String[] args) {
         MongoClient mongoClient = new MongoClient(C.HOST,C.PORT_NUMBER);
         MongoDatabase mongoDatabase = mongoClient.getDatabase(C.DATABASE_NAME);
@@ -17,16 +17,22 @@ public class Q10 {
         /*
          *
          * {
-         *   "address.coord.0" : {
-         *       "$lt" : -95.754168
+         *   "cuisine" : {
+         *      $ne : "American"
+         *   },
+         *   "grades.score" : {
+         *      $gt : 70
+         *   },
+         *   "address.coord.1" : {
+         *      $lt : -65.754168
          *   }
          * }
          *
          * */
 
-        Document query = new Document("address.coord.0",
-                new Document("$lt",-95.754168)
-        );
+        Document query = new Document("cuisine",new Document("$ne","American"))
+                .append("grades.score",new Document("$gt",70))
+                .append("address.coord.1",new Document("$lt",-65.754168));
 
         FindIterable<Document> findIterable = mongoCollection.find(query);
 
